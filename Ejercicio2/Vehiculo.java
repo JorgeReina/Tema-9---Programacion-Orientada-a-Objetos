@@ -1,16 +1,14 @@
 package Ejercicio2;
 
-public class Vehiculo {
+public abstract class Vehiculo {
   
-  //Atributos de clase.
-
+  // atributos de clase
   private static int kilometrosTotales = 0;
   private static int vehiculosCreados = 0;
-
-  //Atributos de instancia.
-
-  private int kilometrosRecorridos = 0;
-
+  
+  // atributos de instancia
+  private int kilometrosRecorridos;
+  
   public Vehiculo() {
     this.kilometrosRecorridos = 0;
   }
@@ -18,8 +16,8 @@ public class Vehiculo {
   public int getKilometrosRecorridos() {
     return this.kilometrosRecorridos;
   }
-
-  public static int getkilometrosTotales() {
+  
+  public static int getKilometrosTotales() {
     return Vehiculo.kilometrosTotales;
   }
 
@@ -38,6 +36,5 @@ public class Vehiculo {
     this.kilometrosRecorridos += k;
     Vehiculo.kilometrosTotales += k;
   }
-
 }
  
